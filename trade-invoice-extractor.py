@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from PyPDF2 import PdfReader
 from enum import Enum
 import functools
@@ -257,7 +258,7 @@ class Order:
                     [
                         self.vendor.name,
                         "",
-                        self.date.strftime("%x"),
+                        self.date.strftime("%d/%m/%Y"),
                         item.name,
                         item.units,
                         item.unitCost,
